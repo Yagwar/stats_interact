@@ -3,7 +3,7 @@ Este proyecto busca facilitar herramientas interactivas para comprender concepto
 ## Estadística univariada
 ### Distribución normal [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Yagwar/stats_interact/master?urlpath=voila%2Frender%2Fdist_normal.ipynb)
 
-En este gráfico encontramos un histograma y la curva de la distribución para unos números generados aleatoriamente con una distribución normal. Los controles permiten ajustar el *promedio*, la *desviación estándar* y el *tamaño de la muestra*. El botón *Fijar Cero* hace que el valor cero en el eje $x$ sea visible para mantener un punto de referencia al momento de ver como los parámetros de media y desviación estándar cambian la distribución. El botón *Reiniciar valores* modifica todos los parámetros para visualizar una distribución normal estándar, con *promedio=0* y desviación *estandar=1*, que son los valores iniciales cuando comenzamos a utilizar los controles.
+En este gráfico encontramos un histograma y la curva de la distribución para unos números generados aleatoriamente con una distribución normal. Los controles permiten ajustar el *promedio*, la *desviación estándar* y el *tamaño de la muestra*. El botón *Fijar Cero* hace que el valor cero en el eje _**x**_ sea visible para mantener un punto de referencia al momento de ver como los parámetros de media y desviación estándar cambian la distribución. El botón *Reiniciar valores* modifica todos los parámetros para visualizar una distribución normal estándar, con *promedio=0* y desviación *estandar=1*, que son los valores iniciales cuando comenzamos a utilizar los controles.
 
 [![Dist_norm](curva_normal.gif)](https://mybinder.org/v2/gh/Yagwar/stats_interact/master?urlpath=%2Fvoila%2Frender%2Fdist_normal.ipynb)
 
@@ -11,9 +11,11 @@ En este gráfico encontramos un histograma y la curva de la distribución para u
 ## Estadística Bivariada
 ### Regresión Lineal simple - Correlación [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Yagwar/stats_interact/master?urlpath=voila%2Frender%2Fcorrelaciones.ipynb)
 
-Es un gráfico de dispersión con números generados aleatoriamente. La pestaña de **datos** contiene los controles permiten generar los puntos en el sistema de coordenadas. Los valores en $x$ son generados mediante números aleatorios con una distribución normal, ajustando el *promedio*, la *desviación estándar* y el *tamaño de la muestra*. Los valores en $y$ son calculados a partir del modelo de regresión simple: 
-$$\hat{y}= m*x+\beta_{0} (+\epsilon)$$ 
-Cada valor de $x$, se multiplica por la *pendiente* ($m$), mas el *intercepto* ($\beta_{0}$) y se le agrega un valor de *dispersión* ($\epsilon$) que es un número aleatorio generado con una distribución normal, de promedio cero y una desviación estándar que es proporcional a la desviación estándar en $x$.
+Es un gráfico de dispersión con números generados aleatoriamente. La pestaña de **datos** contiene los controles permiten generar los puntos en el sistema de coordenadas. Los valores en _**x**_ son generados mediante números aleatorios con una distribución normal, ajustando el *promedio*, la *desviación estándar* y el *tamaño de la muestra*. Los valores en _**y**_ son calculados a partir del modelo de regresión simple: 
+
+<img src="https://render.githubusercontent.com/render/math?math=\hat{y}= m*x+\beta_{0} (+ \epsilon)"> 
+
+Cada valor de _**x**_, se multiplica por la *pendiente* (_**m**_), más el *intercepto* (_**beta_0**_) y se le agrega un valor de *dispersión* ( _**epsilon**_ ) que es un número aleatorio generado con una distribución normal, de promedio cero y una desviación estándar proporcional a la desviación estándar en _**x**_.
 
 La pestaña **gráfico** controla aspectos estéticos. El control de *Transparencia* modifica el color de los puntos, lo cual facilita diferenciar e identificar la densidad de la nube de puntos cuando el tamaño de la muestra es grande. El botón *Fijar origen* hace que el valor cero en abos ejes sea visible para mantener un punto de referencia al momento de modificar la generación de los puntos. El botón *Reiniciar valores* modifica todos los controles a sus valores iniciales.
 
