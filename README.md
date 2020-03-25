@@ -13,7 +13,7 @@ En este gráfico encontramos un histograma y la curva de la distribución para u
 
 Es un gráfico de dispersión con números generados aleatoriamente. La pestaña de **datos** contiene los controles permiten generar los puntos en el sistema de coordenadas. Los valores en _**x**_ son generados mediante números aleatorios con una distribución normal, ajustando el *promedio*, la *desviación estándar* y el *tamaño de la muestra*. Los valores en _**y**_ son calculados a partir del modelo de regresión simple: 
 
-<img src="https://render.githubusercontent.com/render/math?math=\hat{y}= m*x+\beta_{0} (+ \epsilon)"> 
+<img src="https://render.githubusercontent.com/render/math?math=\hat{y}= m*x %2B \beta_{0} ( %2B \epsilon)"> 
 
 Cada valor de _**x**_, se multiplica por la *pendiente* (_**m**_), más el *intercepto* (_**beta_0**_) y se le agrega un valor de *dispersión* ( _**epsilon**_ ) que es un número aleatorio generado con una distribución normal, de promedio cero y una desviación estándar proporcional a la desviación estándar en _**x**_.
 
